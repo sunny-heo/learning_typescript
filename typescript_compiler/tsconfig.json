@@ -1,9 +1,15 @@
+/*
+	To start a new TypeScript project, run the command tsc --init in any directory
+	**note - A tsconfig.json file can inherit configurations from another file by using the extends property. 
+*/
+
 {
 	"compilerOptions": {
 		// "baseUrl": "src",
 		// "outDir": "./dist",
-		"noEmitOnError": true,
+		"noEmitOnError": true, // Does not generate JavaScript until all errors are fixed
 		"target": "es5",
-		"watch": true
+		"watch": true,
+		"lib": ["dom", "es2015"]
 	}
 }
